@@ -1,5 +1,5 @@
 @isTest
-private class {{ api_name }} {
+private with sharing class {{ api_name }} {
 
 	@isTest
 	private static void test_method_one() {
@@ -18,7 +18,7 @@ private class {{ api_name }} {
 
 	}
 
-	private class with sharing TestData{
+	private with sharing class TestData{
 		public Object property1 {
 			get {
 				if (property1 == null) {
